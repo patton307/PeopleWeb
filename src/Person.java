@@ -18,6 +18,10 @@ public class Person implements Comparable {
         this.ip = ip;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
     @Override
     public String toString() {
         return String.format("%s %s", firstName, lastName);

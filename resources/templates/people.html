@@ -1,5 +1,26 @@
 <html>
 <body>
+{{#previousShow}} <a href = "/?count={{previous}}">Previous</a> {{/previousShow}}
+{{count}}
+{{#nextShow}} <a href = "/?count={{next}}">Next</a> {{/nextShow}}
 
+<form action="results" method="get">
+    <input type="text" placeholder="Search by name" name="search"/>
+    <button type="submit">Search</button>
+</form>
+
+{{#list}}
+<a href="person?id={{id}}"><h6>{{id}}.    {{firstName}}      {{lastName}}info</h6></a>
+{{/list}}
+
+{{#previousShow}} <a href = "/?count={{previous}}">Previous</a> {{/previousShow}}
+{{count}}
+{{#nextShow}} <a href = "/?count={{next}}">Next</a> {{/nextShow}}
 </body>
 </html>
+
+<!-- <form action="search" method="post">
+    <input type="text" placeholder="Search by name" name="search"/>
+    <button type="submit">Search</button>
+</form> -->
+
