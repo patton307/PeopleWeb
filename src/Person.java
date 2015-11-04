@@ -18,6 +18,9 @@ public class Person implements Comparable {
         this.ip = ip;
     }
 
+    public Person() {
+    }
+
     public String getFirstName() {
         return firstName;
     }
